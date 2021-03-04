@@ -1,0 +1,24 @@
+
+Runtime Analysis:
+It was kind of unclear on what functions I should analyze for
+runtime so I'll elaborate on part 2 as it took more creative 
+liberties to complete as opposed to part 1 where one could
+just rewrite code that we done in class. randomizedqs.java
+was another form of Quick Sort that returned a random pivot value
+and partitioned the array according to the pivot's value.
+The 'quicksort' function in randomizedqs.java should have a running time
+of O(1) whereas the 'partition' function should be linear.
+quadraticqs.java is selection sort with two extra parameters.
+In general, this function should have a running time of O(n^2) due
+to the double for loop. The hybridqs.java function should be stated
+as "linear" however it would be a little worse than linear due to how
+it calls the modified quick sort and selection sort.
+
+Space Analysis:
+In randomizedqs.java, 'partition' and 'quicksort' is constant due to no 
+array declaration. For quadraticqs.java, the 'quadraticsort' does not have
+an array declaration, thus it is also constant. Lastly, in hybridqs.java, 
+there is no array declaration in hybridsort, thus it is constant. In all 
+of the java classes, there are array declarations in the main functions,
+thus if you were to account for that, they would all be linear in terms of
+space.
