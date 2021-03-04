@@ -7,7 +7,8 @@ For Part 2:
 My choice of sorting algorithm was selection sort (O(n^2)) and
 I created a hybrid of that algorithm with randomized quick sort.
 The size of array that I chose was 5000 random double entries in 
-an array as similar to Part 1 for continuity.
+an array as similar to Part 1 for continuity. I chose selection
+sort due to its runtime of (O(n^2)).
 To determine my threshold array length, I decided to test out
 different array sizes from part 1. I concluded that my "choice
 point" was around an average of 80-100 as the values started to
