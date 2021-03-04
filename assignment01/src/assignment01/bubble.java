@@ -27,4 +27,15 @@ public class bubble {
 		
 		return arr;
 	}
+	
+	void calculate(double [] asdf)
+	{
+		bubble go = new bubble();
+		
+		long start2 = System.currentTimeMillis();
+		go.sort(asdf);
+		long end2 = System.currentTimeMillis();
+		
+		System.out.println("bb: " + (end2-start2) + "milliseconds");
+	}
 }

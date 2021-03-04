@@ -4,6 +4,7 @@ import java.util.Random;
 public class tester{
 	public static void main(String [] args)
 	{
+		//create 10 sizes of 5 same arrays with random values
 		Random rand = new Random();
 		
 		double [] arr1 = new double[50000];
@@ -129,7 +130,7 @@ public class tester{
 		double [] arr50 = arr46.clone();
 		
 		
-		
+		//call to find out how long it takes to calculate for 10 different trials for 5 same arrays
 		time(arr1, arr2, arr3, arr4, arr5);
 		time(arr6, arr7, arr8, arr9, arr10);
 		time(arr11, arr12, arr13, arr14, arr15);
@@ -150,37 +151,22 @@ public class tester{
 	
 		//bubble sort
 		bubble bubbletest = new bubble();
-		long start = System.currentTimeMillis();
-		bubbletest.sort(arr);
-		long end = System.currentTimeMillis();
-		System.out.println("bs: " + (end-start) + "milliseconds");
+		bubbletest.calculate(arr);
 		
 		//selection sort
 		selection selectiontest = new selection();
-		long start1 = System.currentTimeMillis();
-		selectiontest.sort(arr1);
-		long end1 = System.currentTimeMillis();
-		System.out.println("ss: " + (end1-start1) + "milliseconds");
+		selectiontest.calculate(arr1);
 		
 		//insertion sort
 		insertion insertiontest = new insertion();
-		long start2 = System.currentTimeMillis();
-		insertiontest.sort(arr2);
-		long end2 = System.currentTimeMillis();
-		System.out.println("is: " + (end2-start2) + "milliseconds");
+		insertiontest.calculate(arr2);
 		
 		//quick sort
 		quicksort quicksorttest = new quicksort();
-		long start3 = System.currentTimeMillis();
-		quicksorttest.quickSort(arr3, 0, arr3.length-1);
-		long end3 = System.currentTimeMillis();
-		System.out.println("qs: " + (end3-start3) + "milliseconds");
+		quicksorttest.calculate(arr3);
 		
 		//merge sort
 		merge mergetest = new merge();
-		long start4 = System.currentTimeMillis();
-		mergetest.mergeSort(arr4, arr4.length);
-		long end4 = System.currentTimeMillis();
-		System.out.println("ms: " + (end4-start4) + "milliseconds");
+		mergetest.calculate(arr4);
 	}
 }

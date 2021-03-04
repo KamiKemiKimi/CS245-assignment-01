@@ -55,4 +55,22 @@ public class quicksort {
         arr[x] = arr[y];
         arr[y] = temp;
     }
+    
+	void calculate(double [] asdf)
+	{
+		quicksort go = new quicksort();
+		
+		long start2 = System.currentTimeMillis();
+		go.quickSort(asdf, 0, asdf.length-1);
+		long end2 = System.currentTimeMillis();
+	
+		/***
+		long start = System.nanoTime();
+		// some time passes
+		long end = System.nanoTime();
+		long elapsedTime = end - start; 
+		***/
+		
+		System.out.println("qs: " + (end2-start2) + "milliseconds");
+	}
 }

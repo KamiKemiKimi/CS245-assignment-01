@@ -24,7 +24,7 @@ public class insertion {
 		go.sort(asdf);
 		long end2 = System.currentTimeMillis();
 		
-		System.out.println(end2-start2);
+		System.out.println("is: " + (end2-start2) + "milliseconds");
 	}
 
 }

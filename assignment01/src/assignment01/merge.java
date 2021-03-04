@@ -42,5 +42,15 @@ public class merge {
 		    }
 	}
 
+	void calculate(double [] asdf)
+	{
+		merge go = new merge();
+		
+		long start2 = System.currentTimeMillis();
+		go.mergeSort(asdf, asdf.length);
+		long end2 = System.currentTimeMillis();
+		
+		System.out.println("ms: " + (end2-start2) + "milliseconds");
+	}
 	
 }

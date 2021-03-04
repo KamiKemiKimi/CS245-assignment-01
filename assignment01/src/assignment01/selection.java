@@ -22,4 +22,22 @@ public class selection {
 		}
 		return arr;
 	}
+	
+	void calculate(double [] asdf)
+	{
+		selection go = new selection();
+		
+		long start2 = System.currentTimeMillis();
+		go.sort(asdf);
+		long end2 = System.currentTimeMillis();
+		
+		/***
+		long start = System.nanoTime();
+		// some time passes
+		long end = System.nanoTime();
+		long elapsedTime = end - start; 
+		***/
+		
+		System.out.println("ss: " + (end2-start2) + "milliseconds");
+	}
 }
